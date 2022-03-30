@@ -14,22 +14,22 @@ $(document).ready(function () {
 
   // ----------- end welcomescreen slider --------- //
 
-  // ----------- start reviews slider --------- //
 
-  // var swiper = new Swiper(".reviews__slider-wrapper", {
-  //   navigation: {
-  //     nextEl: ".review-next",
-  //     prevEl: ".review-prev",
-  //   },
-  //   speed:800,
-  // });
 
-  // ----------- end reviews slider --------- //
-
-  // --- burger btn --- //
+  // --- start burger menu --- //
 
   $(".burgerbtn").on("click", function () {
     $(this).toggleClass("active");
     $('.mobile__menu').toggleClass("active");
   });
+ // --- end burger menu --- //
+
+
+
+
+   // parallax
+ if ($("body *").is("#scene")) {
+  var scene = document.getElementById("scene");
+  var parallaxInstance = new Parallax(scene);
+ }
 });
