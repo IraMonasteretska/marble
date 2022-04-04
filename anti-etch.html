@@ -8,8 +8,11 @@
   <title>Marble</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon.png">
   <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/lib/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/lib/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="css/lib/aos.css">
   <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,13 +30,13 @@
             <nav class="header__menu ">
               <ul>
                 <li>
-                  <a class="active" href="index.html">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li>
                   <a href="marble.html">Marble</a>
                 </li>
                 <li>
-                  <a href="anti-etch.html">More Anti E tch</a>
+                  <a class="active" href="anti-etch.html">More Anti E tch</a>
                 </li>
                 <li>
                   <a href="we-provide.html">We provide</a>
@@ -113,220 +116,246 @@
     </header>
 
     <main class="main">
-      <section class="welcomescreen">
+      <section class="toppage">
         <div class="container">
-          <div class="welcomescreen__top">
-            <div class="row">
-              <div class="col-xl-4 ">
-                <div class="welcomescreen__title" data-aos="fade-right" data-aos-delay="100">
-                  <h1>
-                    <div class="welcomescreen__title-line" >
-                      About
-                      <i data-aos="lineanim" data-aos-delay="1000"></i>
-                    </div>
-                    <span>Marble N More</span>
-                  </h1>
-                </div>
-              </div>
-              <div class="col-xl-8">
-                <div class="welcomescreen__box">
-                  <div class="welcomescreen__box-content" data-aos="zoom-in" data-aos-delay="200">
-
-                    <p>
-                      Marble N More was founded on quality craftsmanship with a vision to <b>restore and protect</b> the
-                      integrity of the most treasured interior surfaces. Marble is a rare natural stone that is
-                      susceptible to damage and dulling over time due to busy lifestyles and harsh, everyday agents. Our
-                      restorative techniques reinstate the lustre of your original investment and the integrity of your
-                      interiors.
-                    </p>
-                  </div>
-                  <div class="welcomescreen__box-btn brownbtn" data-aos="fade-left" data-aos-delay="600">
-                    <a href="#">Get free qoute</a>
-                  </div>
-                </div>
-              </div>
+          <div class="toppage__img" data-aos="flip-up" data-aos-duration="1200">
+            <img src="img/antietch_toppage_bg.jpg" alt="Marble">
+            <div class="toppage__title section-title">
+              <h1>
+                AntiEtch
+              </h1>
             </div>
           </div>
-          <div class="welcomescreen__slider swiper" data-aos="flip-up" data-aos-duration="2000">
-
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/welcomescreen__slide1.jpg" alt="marble">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/welcomescreen__slide1.jpg" alt="marble">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/welcomescreen__slide1.jpg" alt="marble">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/welcomescreen__slide1.jpg" alt="marble">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/welcomescreen__slide1.jpg" alt="marble">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/welcomescreen__slide1.jpg" alt="marble">
-              </div>
-            </div>
-
-            <div class="welcomescreen__slider-next">
-              <svg width="67" height="20" viewBox="0 0 67 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_117_378)">
-                  <path
-                    d="M5 7.25024L4.25 7.25024L4.25 8.75024L5 8.75024L5 7.25024ZM62.5303 8.53057C62.8232 8.23768 62.8232 7.76281 62.5303 7.46991L57.7574 2.69694C57.4645 2.40405 56.9896 2.40405 56.6967 2.69694C56.4038 2.98984 56.4038 3.46471 56.6967 3.7576L60.9393 8.00024L56.6967 12.2429C56.4038 12.5358 56.4038 13.0106 56.6967 13.3035C56.9896 13.5964 57.4645 13.5964 57.7574 13.3035L62.5303 8.53057ZM5 8.75024L62 8.75024L62 7.25024L5 7.25024L5 8.75024Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <filter id="filter0_d_117_378" x="0.25" y="0.477295" width="66.5" height="19.0459"
-                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha" />
-                    <feOffset dy="2" />
-                    <feGaussianBlur stdDeviation="2" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_117_378" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_117_378" result="shape" />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
-            <div class="welcomescreen__slider-prev">
-              <svg width="67" height="20" viewBox="0 0 67 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_117_377)">
-                  <path
-                    d="M62 7.25L62.75 7.25L62.75 8.75L62 8.75L62 7.25ZM4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967L9.24264 2.6967C9.53553 2.4038 10.0104 2.4038 10.3033 2.6967C10.5962 2.98959 10.5962 3.46446 10.3033 3.75736L6.06066 8L10.3033 12.2426C10.5962 12.5355 10.5962 13.0104 10.3033 13.3033C10.0104 13.5962 9.53553 13.5962 9.24264 13.3033L4.46967 8.53033ZM62 8.75L5 8.75L5 7.25L62 7.25L62 8.75Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <filter id="filter0_d_117_377" x="0.25" y="0.477051" width="66.5" height="19.0459"
-                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha" />
-                    <feOffset dy="2" />
-                    <feGaussianBlur stdDeviation="2" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_117_377" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_117_377" result="shape" />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
-            <div class="swiper-scrollbar"></div>
-          </div>
-
-
         </div>
       </section>
 
-      <section class="info">
+      <section class="antietchvideo">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-5">
-              <div class="info__content">
-                <div class="info__title" data-aos="fade-right" data-aos-delay="100">
+            <div class="col-xxl-4 col-lg-5">
+              <div class="antietchvideo__content">
+                <div class="antietchvideo__title section-title">
                   <h2>
-                    <div class="info__title-line">
-                      We bring
-                      <i data-aos="lineanim" data-aos-delay="800"></i>
-                    </div>
-                    <span>more to Marble</span>
+                    Lorem ipsum
                   </h2>
+                  <i data-aos="lineanim" data-aos-delay="800"></i>
                 </div>
-                <div class="info__subtitle">
-                  Redefine the use of luxurious marble and stone
+                <div class="antietchvideo__content-btn">
+                  <p>Introducing More Anti-Etch</p>
                 </div>
-                <div class="info__text">
-                  <p>
-                    We work with the exclusive US product, MORE AntiEtch that is uniquely curated to protect marble and
-                    stone for up to ten years. Our protective services redefine how you interact with your interiors by
-                    eliminating the dangers of spot damage and bubbling through ultra-thin, long-lasting technology and
-                    application.
-                  </p>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                  enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                  enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="col-xxl-8 col-lg-7">
+              <div class="antietchvideo__box">
+                <div class="video plyr__video-embed js-player">
+                  <iframe src="https://youtu.be/vR8ZiT9JTcg" allowfullscreen allowtransparency allow=" autoplay ">
+                  </iframe>
                 </div>
-                <div class="info__btn brownbtn" data-aos="fade-right" data-aos-delay="200">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marblefeatures">
+        <div class="container">
+          <div class="marblefeatures__top">
+            <div class="marblefeatures__title section-title" data-aos="fade-right" data-aos-delay="100">
+              <h2>
+                Lorem Ipsum
+              </h2>
+              <i data-aos="lineanim" data-aos-delay="800"></i>
+            </div>
+            <div class="marblefeatures__content">
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+          <div class="marblefeatures__bottom">
+            <img class="marblefeatures__img" src="img/marblefeatures_img1.jpg" alt="Marble" data-aos="fade-right"
+              data-aos-delay="100">
+            <img class="marblefeatures__frame" src="img/marblefeatures_img2.jpg" alt="Marble" data-aos="fade-left"
+              data-aos-delay="100">
+          </div>
+        </div>
+      </section>
+
+      <section class="antietchfeatures">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="antietchfeatures__item">
+                <div class="antietchfeatures__title section-title">
+                  <h3>
+                    100% Safe
+                  </h3>
+                </div>
+                <p>
+                  We only use environmentally friendly, non-toxic products to restore or repair your marble surfaces.
+                  This means anyone nearby is safe and you don’t have to leave the building while we work on your job.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="antietchfeatures__item">
+                <div class="antietchfeatures__title section-title">
+                  <h3>
+                    Trusted Experts
+                  </h3>
+                </div>
+                <p>
+                  5-star hotels such as the Four Seasons, The Westin, and InterContinental trust us to keep their luxury
+                  marble surfaces looking their best. It’s also why discerning homeowners choose us!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="antietchfeatures__item">
+                <div class="antietchfeatures__title section-title">
+                  <h3>
+                    Done Right The First Time” Guarantee
+                  </h3>
+                </div>
+                <p>
+                  We’re known for choosing the right methods to restore your marble, and that’s why we get it ‘done
+                  right the first time’ saving you frustration and time. If you need it done right the first time, you
+                  can’t go wrong with Marble N More.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="antietchfeatures__item">
+                <div class="antietchfeatures__title section-title">
+                  <h3>
+                    Visible Results FAST
+                  </h3>
+                </div>
+                <p>
+                  We get amazing transformations FAST. And if you’re wondering whether it will work for you, we offer a
+                  free cleaning on a section of your granite, so you can see the difference for yourself!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="antietchinfo">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-4 col-xl-5 col-lg-6">
+              <div class="antietchinfo__title section-title" data-aos="fade-right" data-aos-delay="100">
+                <h2>
+                  Lorem Ipsum is simply dummy text 
+                </h2>
+                <i data-aos="lineanim" data-aos-delay="800"></i>
+              </div>
+            </div>
+            <div class="col-xxl-5 col-lg-6">
+              <div class="antietchinfo__content">
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <ul>
+                  <li>
+                    Amet minim
+                  </li>
+                  <li>
+                    Consequat duis
+                  </li>
+                  <li>
+                    Nostrud amet
+                  </li>
+                  <li>
+                    Velit officia
+                  </li>
+                  <li>
+                    Mmollit non deserunt ullamco est sit aliqua
+                  </li>
+                </ul>
+                <div class="antietchinfo__btn brownbtn">
                   <a href="#">
                     Get free qoute
                   </a>
                 </div>
-
               </div>
             </div>
-            <div class="col-xl-8 col-lg-7">
-              <div class="info__img" data-aos="fade-left" data-aos-delay="300">
-                <img src="img/info_img.jpg" alt="marble">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="transform" style="background-image: url(img/transform__bg.jpg);">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-4 col-md-3">
-              <div class="transform__img">
+            <div class="col-xxl-3 ">
+              <div class="antietchinfo__img">
                 <div id="scene" >
                   <div data-depth="0.2">
-                    <img src="img/transform__img.png" alt="marble" data-aos="fade-right" data-aos-delay="200">
+                    <img src="img/antietchinfo__frame.png" alt="marble" data-aos="fade-right" data-aos-delay="200">
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-8 col-md-9">
-              <div class="transform__content">
-                <h2>
-                  Transform Your Interiors
-                </h2>
-                <p>
-                  Get instant access to our premium services
-                </p>
-                <div class="transform__btn ">
-                  <a href="#">Get access</a>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
       </section>
 
-      <section class="atmarble">
+
+
+      <section class="marblecontacts ">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-4">
-              <div class="atmarble__title" data-aos="fade-right" data-aos-delay="100">
-                <h2>
-                  <div class="atmarble__title-line">
-                    At
-                    <i data-aos="lineanim" data-aos-delay="800"></i>
-                  </div>
-                  <span>Marble N More</span>
-                </h2>
+            <div class="col-xxl-6 col-xl-5">
+              <div class="marblecontacts__img" data-aos="fade-right" data-aos-delay="100">
+                <picture>
+                  <source srcset="img/marbleinfo_bg.jpg" media="(max-width:1200px)">
+                  <img src="img/marblecontact.jpg" alt="Marble contact">
+                </picture>
               </div>
             </div>
-            <div class="col-xl-8">
-              <div class="atmarble__content">
-                <div class="atmarble__text">
+            <div class="col-xxl-6 col-xl-7">
+              <div class="contacts__form">
+                <div class="contacts__form-title">
+                  <h1>
+                    Let’s get in Touch!
+                  </h1>
                   <p>
-                    <b>restoration, repair and protection</b> are our specialty with a profound understanding of
-                    exceptional materials known for their beauty, rarity, and difficulty to work with. Servicing the
-                    exclusive residential market, we also work with <b>architects and designers</b>, building managers,
-                    <b>and commercial partners</b> such as hotels and bespoke venues.
+                    If you're looking to restore or maintain your all-natural stone or<br> marble surfaces, we'd love
+                    the opportunity to help.
                   </p>
                 </div>
-                <div class="atmarble__btn brownbtn" data-aos="fade-left" data-aos-delay="600">
-                  <a href="#">Get free qoute</a>
-                </div>
+                <form>
+                  <input type="text" placeholder="First Name" required>
+                  <input type="text" placeholder="Last Name" required>
+                  <input type="text" placeholder="Email" required>
+                  <input type="text" placeholder="Phone" required>
+
+                  <select name="City" id="city" placeholder="City">
+                    <option value="City" dicabled>City</option>
+                    <option value="city2">city2</option>
+                  </select>
+
+                  <select id="service">
+                    <option value="Type" dicabled>Type of service</option>
+                    <option value="service2">service2</option>
+                  </select>
+                  <button class="contacts__btn">
+                    Send!
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
     </main>
 
@@ -432,6 +461,8 @@
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/parallax.js"></script>
   <script src="js/lib/aos.js"></script>
+  <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
+  <script src="js/lib/jquery.formstyler.min.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/lib/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

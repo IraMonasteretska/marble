@@ -29,6 +29,8 @@ $(document).ready(function () {
   }
   // --- end PARALLAX ----- //
 
+
+
   // --- start AOS ----- //
   AOS.init({
     duration: 1200,
@@ -37,5 +39,19 @@ $(document).ready(function () {
   });
   // --- end AOS ----- //
 
+  // --- start styleselect ----- //
   $("select").styler();
+  // --- end styleselect ----- //
+
+
+    // --- start video player ----- //
+    const player = new Plyr(".js-player");
+
+    $(".antietchvideo__content-btn").on("click", function () {
+      player.togglePlay();
+      $(this).toggleClass('pause');
+      
+    });
+    // --- end video player ----- //
+
 });
