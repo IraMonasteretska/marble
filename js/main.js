@@ -44,6 +44,18 @@ $(document).ready(function () {
   $("select").styler();
   // --- end styleselect ----- //
 
+
+  // --- start video player ----- //
+  const player = new Plyr(".js-player");
+
+  $(".antietchvideo__content-btn").on("click", function () {
+    player.togglePlay();
+    $(this).toggleClass('pause');
+
+  });
+  // --- end video player ----- //
+  
+
   // ----------- start welcomescreen slider --------- //
   var swiper = new Swiper(".weprovideslider__inner", {
 
@@ -58,8 +70,8 @@ $(document).ready(function () {
       1600: {
         spaceBetween: 40
       },
-       // when window width is >= 1600px
-       1400: {
+      // when window width is >= 1600px
+      1400: {
         spaceBetween: 20
       },
       768: {
@@ -75,14 +87,6 @@ $(document).ready(function () {
   // ----------- end welcomescreen slider --------- //
 
 
-  // --- start video player ----- //
-  const player = new Plyr(".js-player");
 
-  $(".antietchvideo__content-btn").on("click", function () {
-    player.togglePlay();
-    $(this).toggleClass('pause');
-
-  });
-  // --- end video player ----- //
 
 });
