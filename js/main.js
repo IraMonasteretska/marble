@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+
+  // ------- start fixed header ---- //
+  $(window).scroll(function () {
+    var headerHeight = $(".header").outerHeight();
+    if ($(this).scrollTop() > headerHeight) {
+      $('.header').addClass('active');
+    } else {
+      $('.header').removeClass('active');
+    }
+    if ($(this).scrollTop() > 200) {
+      $('.header').addClass('visible');
+    } else {
+      $('.header').removeClass('visible');
+    }
+  });
+
+  // ------- end fixed header ---- //
+
   // ----------- start welcomescreen slider --------- //
   var swiper = new Swiper(".welcomescreen__slider", {
     scrollbar: {
@@ -54,7 +72,7 @@ $(document).ready(function () {
 
   });
   // --- end video player ----- //
-  
+
 
   // ----------- start welcomescreen slider --------- //
   var swiper = new Swiper(".weprovideslider__inner", {
