@@ -63,17 +63,6 @@ $(document).ready(function () {
   // --- end styleselect ----- //
 
 
-  // --- start video player ----- //
-  const player = new Plyr(".js-player");
-
-  $(".antietchvideo__content-btn").on("click", function () {
-    player.togglePlay();
-    $(this).toggleClass('pause');
-
-  });
-  // --- end video player ----- //
-
-
   // ----------- start welcomescreen slider --------- //
   var swiper = new Swiper(".weprovideslider__inner", {
 
@@ -88,14 +77,16 @@ $(document).ready(function () {
       1600: {
         spaceBetween: 40
       },
-      // when window width is >= 1600px
+      // when window width is >= 1400px
       1400: {
         spaceBetween: 20
       },
+      // when window width is >= 768px
       768: {
         slidesPerView: 3,
         spaceBetween: 10
       },
+      // when window width is >= 320px
       320: {
         spaceBetween: 20,
         slidesPerView: 1,
