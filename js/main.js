@@ -96,6 +96,6 @@ $(document).ready(function () {
   // ----------- end welcomescreen slider --------- //
 
 
-
-
 });
+
+const player = new Plyr('#player');
