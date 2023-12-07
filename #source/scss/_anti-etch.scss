@@ -1,0 +1,266 @@
+
+
+//  ------------- section antietchfeatures --------------------- //
+
+.antietchfeatures {
+  background-color: #fff;
+  padding: 100px 0 50px;
+
+}
+
+.antietchfeatures__item {
+  margin-bottom: 100px;
+  padding-left: 26px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #C08465;
+    height: 125px;
+    width: 4px;
+  }
+
+  h3 {
+    margin-bottom: 27px;
+    color: #212121;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #212121;
+    max-width: 670px;
+  }
+}
+
+
+
+// ---------- section antietchinfo  ------- //
+
+.antietchinfo {
+  background: #212121;
+  padding: 100px 0;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.antietchinfo__title {
+  h2 {
+    color: #FFFFFF;
+    margin-bottom: 38px;
+  }
+}
+
+.antietchinfo__content {
+  margin-left: 90px;
+  max-width: 491px;
+  width: 100%;
+}
+
+.antietchinfo__btn-mobile{
+  display: none;
+}
+
+.antietchinfo__box {
+  margin: 50px 0;
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
+}
+
+.antietchinfo__content {
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+
+  }
+
+  ul {
+    padding-left: 20px;
+
+    &>li {
+      list-style: disc;
+      font-size: 18px;
+      line-height: 150%;
+      color: #FFFFFF;
+
+      &+li {
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+.antietchinfo__img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  img {
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0px 14px 26px rgba(0, 0, 0, 0.15);
+  }
+}
+
+
+
+//    -----  RESPONSIVE ------   //
+
+@media(max-width:1600px) {
+  .antietchinfo__box p{
+    font-size: 16px;
+  }
+  .antietchinfo__content {
+    margin-left: 15px;
+    max-width: 450px;
+
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    ul>li {
+      font-size: 16px;
+    }
+  }
+
+  .antietchfeatures__item p {
+    font-size: 16px;
+  }
+
+  .antietchvideo {
+    padding: 100px 0;
+  }
+
+  .antietchvideo__content>p {
+    font-size: 16px;
+
+    &+p {
+      margin-top: 15px;
+    }
+  }
+}
+
+
+@media(max-width:1400px) {
+  .antietchinfo__box {
+    margin: 25px 0;
+  }
+
+  .antietchinfo__content {
+    margin-left: 30px;
+    max-width: 100%;
+  }
+
+  .antietchinfo__img img {
+    max-width: 330px;
+  }
+
+  .antietchinfo {
+    padding: 70px 0;
+    margin-bottom: 0;
+  }
+
+  .antietchfeatures {
+    padding: 70px 0 0px;
+  }
+
+
+  .antietchfeatures__item {
+    margin-bottom: 80px;
+
+    &:before {
+      width: 3px;
+      height: 100px;
+    }
+  }
+
+  .antietchvideo__box .plyr__control--overlaid {
+    width: 70px !important;
+    height: 69px;
+  }
+
+  .antietchvideo__box .plyr--video {
+    margin-left: 0;
+  }
+
+  .antietchvideo {
+    padding: 70px 0;
+  }
+
+  .antietchinfo__img {
+    display: none;
+  }
+}
+
+
+@media(max-width:991.8px) {
+  .antietchinfo__btn {
+    display: none;
+  }
+  .antietchinfo__btn-mobile{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .antietchinfo__content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .antietchinfo__box {
+    margin: 25px 0 10px;
+}
+
+  .antietchfeatures__item {
+    margin-bottom: 60px;
+  }
+
+  .antietchvideo__content {
+    margin-bottom: 25px;
+  }
+}
+
+@media(max-width:767.8px) {
+  .antietchinfo {
+    padding: 50px 0;
+  }
+
+  .antietchfeatures__item {
+    margin-bottom: 50px;
+  }
+
+  .antietchfeatures {
+    padding: 55px 0 0px;
+  }
+
+  .antietchvideo {
+    padding: 50px 0;
+  }
+
+  .antietchvideo__title {
+    margin-bottom: 35px;
+  }
+
+  .antietchvideo__content-btn {
+    padding-left: 60px;
+    margin-bottom: 20px;
+
+    p {
+      font-size: 16px;
+    }
+
+    &:after {
+      height: 32px;
+      width: 33px;
+    }
+  }
+}

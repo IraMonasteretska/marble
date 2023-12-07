@@ -1,0 +1,269 @@
+.header {
+  background-color: #212121;
+  padding: 40px 0 25px;
+  border-bottom: 1px solid #3f3f3f;
+  width: 100%;
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 112px;
+
+  &.active {
+    opacity: 0;
+    position: fixed;
+
+
+  }
+
+  &.visible {
+    opacity: 1;
+    transition: .6s;
+  }
+}
+
+.header__logo {
+  max-width: 266px;
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+
+.burgerbtn,
+.mobile__menu {
+  display: none;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 140px;
+
+  ul>li {
+    display: inline-block;
+
+    &+li {
+      margin-left: 45px;
+    }
+
+    a {
+      font-size: 17px;
+      line-height: 110%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding-bottom: 5px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 0;
+        background: #c08465;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+
+      &.active {
+        &:after {
+          width: 100%;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.header__social {
+  a {
+    width: 19px;
+    display: inline-block;
+
+    &+a {
+      margin-left: 25px;
+    }
+
+    svg path {
+      transition: 0.3s;
+    }
+
+    &:hover {
+      svg path {
+        fill: #c08465;
+      }
+    }
+  }
+}
+
+//  ---- RESPONSIVE ------ //
+
+@media (max-width: 1800px) {
+  .header__menu {
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .header__menu {
+    padding-right: 20px;
+  }
+
+  .header__menu ul>li+li {
+    margin-left: 30px;
+  }
+
+  .header__menu ul>li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header {
+    height: 104px;
+  }
+  .header__social a+a {
+    margin-left: 15px;
+}
+
+  .header__menu ul>li+li {
+    margin-left: 25px;
+  }
+
+  .header__menu ul>li a {
+    font-size: 14px;
+  }
+
+  .header__logo {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__menu ul>li+li {
+    margin-left: 12px;
+  }
+  .header__menu ul>li a {
+    font-size: 13px;
+}
+
+  .header__logo {
+    max-width: 190px;
+  }
+  .header {
+    height: 98px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .header {
+    padding: 25px 0 20px;
+    height: auto;
+  }
+
+  .header__menu,
+  .header__social {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: block;
+    position: fixed;
+    z-index: 88;
+    left: 0;
+    right: 0;
+    top: 79px;
+    background-color: #212121;
+    width: 100%;
+    min-height: calc(100vh - 79px);
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    transform: scale(0);
+    overflow-y: scroll;
+    transform-origin: top right;
+    opacity: 0;
+    transition: .5s;
+
+    &.active {
+      transform: scale(1);
+      opacity: 1;
+      transition: .5s;
+    }
+
+    ul {
+      display: inline-block;
+    }
+
+    ul>li {
+      margin-bottom: 20px;
+      display: block;
+
+      a {
+        text-transform: uppercase;
+        font-size: 17px;
+        line-height: 110%;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .mobile__menu-inner {
+    min-height: 420px;
+    height: calc(100vh - 79px);
+  }
+
+  .mobile__social {
+    margin-top: 30px;
+
+    a {
+      &+a {
+        margin-left: 25px;
+      }
+    }
+  }
+
+  .burgerbtn {
+    display: block;
+    width: 21px;
+    margin: 0 0 0 auto;
+    position: relative;
+    z-index: 99;
+
+    span {
+      display: block;
+      width: 21px;
+      height: 2px;
+      background-color: #fff;
+      transition: 0.3s;
+
+      &+span {
+        margin-top: 4px;
+      }
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: rotate(44deg) translate(0px, 4px);
+      }
+
+      span:nth-child(3) {
+        transform: rotate(-44deg) translate(4px, -9px);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.8px) {}

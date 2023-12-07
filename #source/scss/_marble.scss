@@ -1,0 +1,512 @@
+//  --- section marbleinfo -------- //
+
+.marbleinfo {
+  padding: 150px 0;
+  background-color: #fff;
+}
+
+.marbleinfo__title {
+  h2 {
+    margin-bottom: 22px;
+    color: #212121;
+  }
+}
+
+.marbleinfo__top {
+  margin-bottom: 130px;
+}
+
+.consultinfo .marbleinfo__top {
+  margin-bottom: 100px;
+}
+
+.marbleinfo__content {
+  padding-left: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.consultinfo .marbleinfo__top {
+  margin-bottom: 100px;
+}
+
+.consultinfo .marbleinfo__content {
+  align-items: center;
+  padding-left: 40px;
+}
+
+.marbleinfo.consultinfo {
+  padding-bottom: 103px;
+}
+
+.marbleinfo.consulttext {
+  padding-bottom: 0px;
+}
+
+.marbleinfo__text {
+  max-width: 577px;
+  width: 100%;
+  margin-right: 105px;
+  color: #212121;
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 19px;
+  }
+}
+
+.marbleinfo__bottom {
+  overflow: hidden;
+
+  img {
+    transition: 0.5s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+      filter: brightness(85%);
+    }
+  }
+}
+
+//  --- section marblefeatures -------- //
+
+.marblefeatures {
+  padding: 123px 0 100px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    background: #212121;
+  }
+}
+
+.marblefeatures.consultfeatures {
+  .marblefeatures__top {
+    margin-bottom: 0;
+  }
+
+  .marblefeatures__title {
+    max-width: 670px;
+    margin-right: 0px;
+  }
+
+  .antietchfeatures__item {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    li {
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 53px;
+      max-width: 670px;
+    }
+  }
+}
+
+.marblefeatures__top {
+  margin-bottom: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.marblefeatures__title {
+  max-width: 480px;
+  width: 100%;
+  margin-right: 40px;
+
+  h2 {
+    color: #ffffff;
+    margin-bottom: 22px;
+  }
+}
+
+.marblefeatures__content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    max-width: 570px;
+    width: 100%;
+
+    &+p {
+      margin-left: 80px;
+    }
+  }
+}
+
+.marblefeatures__content-btn {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 130px;
+}
+
+.marblefeatures__bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 550px;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.marblefeatures__img {
+  width: 62%;
+}
+
+.marblefeatures__frame {
+  width: 33%;
+}
+
+//  --- section marbletext -------- //
+
+.marbletext {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.marbletext__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.marbletext__title {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 40px;
+
+  h2 {
+    color: #212121;
+    margin-bottom: 22px;
+  }
+}
+
+.marbletext__content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #212121;
+    max-width: 570px;
+    width: 100%;
+
+    &+p {
+      margin-left: 80px;
+    }
+  }
+}
+
+//  --- section marblecontacts --- //
+.marblecontacts {
+  background-color: #fff;
+  padding: 100px 0 150px;
+}
+
+.marblecontacts__img {
+  max-width: 789px;
+  overflow: hidden;
+
+  img {
+    transition: 0.4s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+      filter: brightness(85%);
+    }
+  }
+}
+
+//  ----- RESPONSIVE ------- //
+
+@media (max-width: 1800px) {
+  .marblefeatures__bottom {
+    height: 470px;
+  }
+
+  .marblefeatures {
+    padding: 100px 0 60px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .marblefeatures__content-btn {
+    padding-right: 0;
+    padding-left: 70px;
+  }
+
+  .marbleinfo__text {
+
+    p,
+    h3 {
+      font-size: 16px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .marbleinfo {
+    padding: 100px 0;
+  }
+
+  .marblefeatures__top,
+  .marbleinfo__top {
+    margin-bottom: 80px;
+  }
+
+  .marblefeatures {
+    padding: 80px 0 40px;
+  }
+
+  .marblefeatures__bottom {
+    height: 400px;
+  }
+
+  .marbletext__content p,
+  .marblefeatures__content p {
+    font-size: 16px;
+
+    &+p {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+
+  .marbleinfo.consultinfo,
+  .marbleinfo.consulttext {
+
+    .section-title h1,
+    .section-title h2,
+    .section-title h3 {
+      font-size: 36px;
+    }
+  }
+
+  .marblefeatures.consultfeatures .antietchfeatures__item h3 {
+    font-size: 30px;
+  }
+
+  .marbleinfo.consultinfo .marbleinfo__content,
+  .marbleinfo.consulttext .marbleinfo__content {
+    padding-left: 0px;
+  }
+
+  .marblefeatures__title {
+    max-width: 330px;
+  }
+
+  .marbleinfo {
+    padding: 70px 0;
+  }
+
+  .marbleinfo__text {
+    margin-right: 50px;
+  }
+
+  .marblefeatures__bottom {
+    height: 350px;
+  }
+
+  .marbletext__title {
+    max-width: 320px;
+  }
+
+  .marbletext {
+    padding: 60px 0 30px;
+  }
+
+  .marblecontacts {
+    padding: 60px 0 90px;
+  }
+}
+
+@media (max-width: 1199.8px) {
+  .marblefeatures__content-btn {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+
+  .marbleinfo__content {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .marblefeatures__top {
+    margin-bottom: 50px;
+  }
+
+  .marbletext__content,
+  .marblefeatures__content {
+    flex-direction: column;
+
+    p+p {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+
+  .marblecontacts__img {
+    max-width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .marblecontacts .contacts__form {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .marblefeatures.consultfeatures .marblefeatures__title {
+    margin-bottom: 40px;
+  }
+
+  .marbleinfo__content {
+    padding-top: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .marbleinfo__btn a {
+    margin-top: 35px;
+  }
+
+  .marbleinfo__top {
+    margin-bottom: 60px;
+  }
+
+  .marbleinfo__text {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .marblefeatures__frame {
+    display: none;
+  }
+
+  .marblefeatures__img {
+    width: 100%;
+  }
+
+  .marblefeatures__bottom {
+    height: 300px;
+  }
+
+  .marbletext__content,
+  .marblefeatures__content {
+    width: 100%;
+
+    p {
+      max-width: 100%;
+    }
+  }
+
+  .marbletext__inner,
+  .marblefeatures__top {
+    flex-direction: column;
+  }
+
+  .marbletext__title,
+  .marblefeatures__title {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .marbletext {
+    padding: 50px 0 40px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .marbleinfo.consulttext .marbleinfo__top {
+    margin-bottom: 30px;
+  }
+
+  .marblefeatures.consultfeatures {
+    padding-bottom: 60px;
+
+    &:after {
+      height: 100%;
+    }
+  }
+
+  .marbleinfo.consultinfo {
+    padding-bottom: 60px;
+  }
+
+  .consultinfo .marbleinfo__top {
+    margin-bottom: 70px;
+  }
+
+  .marbleinfo {
+    padding: 50px 0;
+  }
+
+  .marbleinfo__top {
+    margin-bottom: 50px;
+  }
+
+  .marbleinfo__bottom,
+  .marblecontacts__img {
+    transform: scale(1.1);
+    height: 180px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .marblecontacts {
+    padding: 50px 0 50px;
+  }
+
+  .marblefeatures__bottom {
+    height: 200px;
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  .marblefeatures {
+    padding: 50px 0 10px;
+  }
+}

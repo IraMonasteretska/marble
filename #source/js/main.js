@@ -95,10 +95,7 @@ $(document).ready(function () {
   });
   // ----------- end welcomescreen slider --------- //
 
-  
-if($('#player').length) {
-  const player = new Plyr('#player');
-}
 
 });
 
+const player = new Plyr('#player');
